@@ -13,7 +13,113 @@
 
 <body>
     <!-- Put HTML Here -->
-    
+    <header class="flex flex-c font-metropolis">
+        <div class="nav-bar flex flex-r align-cntr space-btwn">
+            <img src="assets/img/logo-relay.png" alt="Firefox Relay Logo">
+            <nav class="hide-mobile nav-links flex align-cntr">
+                <a class="active">Home</a>
+                <a>FAQ</a>
+            </nav>
+            <div class="flex flex-r align-cntr">
+                <button class="table-icon"><i class="fas fa-th"></i></button>
+                <div class="profile-pic"></div>
+            </div>
+        </div>
+        <nav class="show-mobile mobile-nav flex flex-c align-cntr">
+            <button class="flex flex-r" id="menu-button">
+                <span>Menu</span>
+                <i class="fas fa-angle-down" id="menu-arrow"></i>
+            </button>
+            <div class="flex flex-c" id="mobile-nav-links">
+                <a class="active">Home</a>
+                <a>FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-c font-metropolis">
+        <div class="flex flex-c main-header">
+            <div class="main-headline flex flex-r align-cntr space-btwn marg-out">
+                <h1>Manage your Relay aliases</h1>
+                <span class="hide-small"><b>4</b> remaining aliases</span>
+            </div>
+            <hr>
+            <button class="gen-button marg-out flex flex-r space-btwn align-cntr">
+                <i class="fas fa-plus"></i><span>Generate New Alias</span>
+            </button>
+            <span class="show-small"><b>4</b> remaining aliases</span>
+        </div>
+        <div class="alias flex flex-c">
+            <div class="alias-top flex flex-r align-cntr space-btwn marg-out">
+                <span class="hide-mobile">Add account name<i class="fas fa-pencil-alt"></i></span>
+                <div class="flex flex-r align-cntr">
+                    <span>forwarding</span>
+                    <i class="fas fa-toggle-on"></i>
+                </div>
+            </div>
+            <div class="flex flex-c" id="alias-body">
+                <div class="alias-content flex flex-r space-btwn">
+                    <div class="alias-left flex flex-c">
+                        <div class="email-container">
+                            <span class="email">sw4wo4v1s@relay.firefox.com</span>
+                            <i class="far fa-copy"></i>
+                        </div>
+                        <button class="flex flex-r align-cntr space-btwn" id="details-button">
+                            <span id="show-details">Show Details</span>
+                            <span id="hide-details" class="hide">Hide Details</span>
+                            <i class="fas fa-angle-down" id="details-arrow"></i>
+                        </button>
+                    </div>
+                    <div class="alias-info hide-small flex flex-r align-cntr space-btwn">
+                        <div class="blocked flex flex-c align-cntr">
+                            <span class="number">0</span>
+                            <span class="caption">Blocked</span>
+                        </div>
+                        <div class="forwarded flex flex-c align-cntr">
+                            <span class="number">0</span>
+                            <span class="caption">Forwarded</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="alias-details flex flex-r align-cntr space-btwn">
+                    <div class="details-info flex flex-r align-cntr">
+                        <div class="blocked show-small flex flex-r align-cntr">
+                            <span class="caption">Blocked</span>
+                            <span class="number">0</span>
+                        </div>
+                        <div class="forwarded show-small flex flex-r align-cntr">
+                            <span class="caption">Forwarded</span>
+                            <span class="number">0</span>
+                        </div>
+                        <div class="created flex flex-c">
+                            <span>Created:</span>
+                            <span>May 10, 2021</span>
+                        </div>
+                        <div class="forward-to flex flex-c hide-small">
+                            <span>Forward emails to</span>
+                            <span class="email">mcrawford@mozilla.com</span>
+                        </div>
+                    </div>
+                    <button class="delete-button">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p class="font-inter">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+    </main>
+
+    <footer class="pad-full flex flex-r font-metropolis align-cntr">
+        <img src="assets/img/logo-mozilla.svg" alt="Firefox Relay Logo">
+        <nav class="nav-links flex align-cntr">
+            <a>Privacy</a>
+            <a>Relay Terms</a>
+            <a>Legal</a>
+            <a><i class="fab fa-github"></i></a>
+        </nav>
+    </footer>
+
     <!-- 
         Font Awesome v5 Free - See https://fontawesome.com/start for more info
         Example usage: <i class="fas fa-toggle-off"></i>
