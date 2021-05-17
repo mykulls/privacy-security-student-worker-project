@@ -337,7 +337,8 @@ main {
     margin-bottom: 0.5em;
 }
 
-.alias .details-info div:nth-child(3) span:nth-child(2) {
+.alias .details-info .created span:nth-child(2),
+.alias .details-info .forward-to span:nth-child(2) {
     color: var(--grey-dark);
 }
 
